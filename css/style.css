@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#nav-logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-logo span{
+    font-size: 30px;
+    color: #585858;
+    text-align: center;
+}
+
+#nav-elementos{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+#nav-elementos a{
+    margin: auto;
+}
+
+#nav-elementos a:hover{
+    color: #000;
+}
+
+main{
+    background-color: #acabab;
+    padding-bottom: 10vh;
+}
+
+#formulario{
+    margin: 0 3vw 0 3vw;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+form .col-md-4,
+form .col-md-1,
+form .col-md-2 {
+    flex: 1; 
+    min-width: 200px;
+}
+
+.form-label{
+    text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+
+footer{
+    background-color: #BE3837;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+footer span{
+    margin: 0 5vw 0 5vw;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #nav-logo span{
+        font-size: 30px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    #nav-logo span{
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    #nav-logo span{
+        font-size: 15px;
+    }
+    
+}
