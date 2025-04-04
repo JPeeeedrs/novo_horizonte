@@ -76,6 +76,18 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
+        // Validação do campo de sexo
+        const sexoSelect = document.getElementById("sexo");
+        const sexoOutro = document.getElementById("sexoOutro");
+
+        if (sexoSelect.value === "outro") {
+            if (sexoOutro.value.trim() === "") {
+                setError(sexoOutro, "Por favor, especifique sua identidade de gênero.");
+            } else {
+                clearError(sexoOutro);
+            }
+        }
+
         if (!isValid) {
             event.preventDefault();
         }
@@ -98,6 +110,20 @@ document.addEventListener("DOMContentLoaded", function () {
             telefone.value = valor.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
         }
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const inputCPF = document.getElementById("inputCPF");
+    
+        inputCPF.addEventListener("input", function () {
+            let valor = inputCPF.value.replace(/\D/g, ""); // Remove tudo que não for número
+            if (valor.length > 11) valor = valor.slice(0, 11); // Limita a 11 dígitos
+    
+            // Formatação: XXX.XXX.XXX-XX
+            valor = valor.replace(/^(\d{3})(\d)/, "$1.$2");
+            valor = valor.replace(/^(\d{3})\.(\d{3})(\d)/, "$1.$2.$3");
+            valor = valor.replace(/\.(\d{3})(\d)/, ".$1-$2");
+    
+            inputCPF.value = valor;
+        });
+    });
 });
-
-
