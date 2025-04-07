@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 #nav-logo a {
     display: flex;
     justify-content: center;
@@ -32,30 +41,53 @@
 
 main {
     background-color: #fff;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #formulario {
     margin: 0 15vw;
     background-color: #c5c5c5;
-    padding: 0 30px 30px 30px;
+    padding: 30px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-/* Ajustes no formulário */
-form {
+    min-height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: space-between; /* garante alinhamento dos itens nas extremidades */
+    justify-content: center;
+    align-items: center;
 }
 
-form .col-md-4,
-form .col-md-2,
-form .col-md-1 {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: calc(33.333% - 10px); /* para manter alinhamento e espaço consistente */
-    min-width: 200px;
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.btn-nav {
+    background-color: #BE3837;  /* cor de fundo */
+    color: #fff;                /* cor do texto */
+    border: none;               /* sem borda */
+    padding: 10px 20px;         /* espaçamento interno */
+    font-size: 1rem;            /* tamanho da fonte */
+    border-radius: 5px;         /* cantos arredondados */
+    cursor: pointer;            /* cursor pointer ao passar o mouse */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 5px;           /* margem para espaçamento entre botões */
+}
+
+  /* Efeito de hover */
+.btn-nav:hover {
+    background-color: #a52a2a;  /* cor de fundo ao passar o mouse */
+    transform: scale(1.05);     /* leve aumento no tamanho */
+}
+
+  /* Efeito de foco para acessibilidade */
+.btn-nav:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(190, 56, 55, 0.5);
 }
 
 .form-label {
@@ -75,6 +107,7 @@ input[type="number"] {
 }
 
 #documentos {
+    margin-top: 20px;
     margin-left: 10px;
     display: flex;
     flex-wrap: wrap;

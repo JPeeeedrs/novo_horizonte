@@ -38,159 +38,237 @@
     <!-- Conteúdo principal -->
     <main>
         <!-- Início do formulário -->
-        <form class="row g-3" id="formulario">
+        <form id="formulario">
 
-            <!-- Seção: Dados do Aluno -->
-                <h3 class="mt-4">Dados do Aluno</h3>
-                <!-- Campo: Nome do aluno -->
-                <div class="col-md-6">
-                    <label for="inputName4" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="inputName4" placeholder="João da Silva" required>
-                </div>
-                <!-- Campo: Idade -->
-                <div class="col-md-1">
-                    <label for="inputAge" class="form-label">Idade</label>
-                    <input type="number" class="form-control" id="inputAge" placeholder="00" required>
-                </div>
-                <!-- Campo: Data de Nascimento -->
-                <div class="col-md-3">
-                    <label for="inputBirthDate" class="form-label">Data de Nascimento</label>
-                    <input type="date" class="form-control" id="inputBirthDate" placeholder="00/00/0000" required>
-                </div>
-                <!-- Campo: Naturalidade -->
-                <div class="col-md-1">
-                    <label for="inputNaturalidade" class="form-label">Naturalidade</label>
-                    <input type="text" class="form-control" id="inputNaturalidade" placeholder="Teresópolis" required>
-                </div>
-                <!-- Campo: Nacionalidade -->
-                <div class="col-md-1">
-                    <label for="inputNacionalidade" class="form-label">Nacionalidade</label>
-                    <input type="text" class="form-control" id="inputNacionalidade" placeholder="Brasileira" required>
-                </div>
-                <!-- Campo: Sexo -->
-                <div class="col-md-2">
-                    <label for="inputSexo" class="form-label">Sexo</label>
-                    <select id="inputSexo" class="form-select" required>
-                        <option selected disabled value="">Selecione</option>
-                        <option>Feminino</option>
-                        <option>Masculino</option>
-                        <option>Não Binário</option>
-                        <option>Outro</option>
-                        <option>Prefiro não informar</option>
-                    </select>
-                </div>
-                <!-- Campo: CPF -->
-                <div class="col-md-1">
-                    <label for="inputCPF" class="form-label">CPF</label>
-                    <input type="number" class="form-control" id="inputCPF" placeholder="000.000.000-00" required>
-                </div>
-                <!-- Campo: RG -->
-                <div class="col-md-1">
-                    <label for="inputRG" class="form-label">RG</label>
-                    <input type="number" class="form-control" id="inputRG" placeholder="00.000.000-0" required>
-                </div>
-                <!-- Campo: Ano Letivo -->
-                <div class="col-md-1">
-                    <label for="inputYear" class="form-label">Ano Letivo</label>
-                    <input type="number" class="form-control" id="inputYear" placeholder="2025" required>
-                </div>
-                <!-- Campos de Termo, Folha, Livro e Matrícula -->
-                <div class="col-12">
-                    <div class="row">
+            <div class="step active" id="step1">
+                <!-- Seção: Dados do Aluno -->
+                    <div class="row g-3">
+                        <h3 class="mt-4">Dados do Aluno</h3>
+                        <!-- Campo: Nome do aluno -->
+                        <!-- linha 1 -->
                         <div class="col-md-4">
-                        <label for="inputTermo" class="form-label">Termo</label>
-                        <input type="text" class="form-control" id="inputTermo" placeholder="00000" required>
+                            <label for="inputName4" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="inputName4" placeholder="João da Silva" required>
                         </div>
+                        <!-- Campo: Idade -->
                         <div class="col-md-4">
-                        <label for="inputFolha" class="form-label">Folha</label>
-                        <input type="text" class="form-control" id="inputFolha" placeholder="000" required>
+                            <label for="inputAge" class="form-label">Idade</label>
+                            <input type="number" class="form-control" id="inputAge" placeholder="00" required>
                         </div>
+                        <!-- Campo: Data de Nascimento -->
                         <div class="col-md-4">
-                        <label for="inputLivro" class="form-label">Livro</label>
-                        <input type="text" class="form-control" id="inputLivro" placeholder="000" required>
+                            <label for="inputBirthDate" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="inputBirthDate" placeholder="00/00/0000" required>
+                        </div>
+                        <!-- Campo: Naturalidade -->
+                        <!-- linha 2 -->
+                        <div class="col-md-4">
+                            <label for="inputNaturalidade" class="form-label">Naturalidade</label>
+                            <input type="text" class="form-control" id="inputNaturalidade" placeholder="Teresopolitano" required>
+                        </div>
+                        <!-- Campo: Nacionalidade -->
+                        <div class="col-md-4">
+                            <label for="inputNacionalidade" class="form-label">Nacionalidade</label>
+                            <input type="text" class="form-control" id="inputNacionalidade" placeholder="Brasileira" required>
+                        </div>
+                        <!-- Campo: Sexo -->
+                        <div class="col-md-4">
+                            <label for="inputSexo" class="form-label">Sexo</label>
+                            <select id="inputSexo" class="form-select" required>
+                                <option selected disabled>Selecione</option>
+                                <option>Feminino</option>
+                                <option>Masculino</option>
+                                <option>Não Binário</option>
+                                <option>Outro</option>
+                                <option>Prefiro não informar</option>
+                            </select>
+                        </div>
+                        <!-- Campo: CPF -->
+                        <!-- linha 3 -->
+                        <div class="col-md-4">
+                            <label for="inputCPF" class="form-label">CPF</label>
+                            <input type="number" class="form-control" id="inputCPF" placeholder="000.000.000-00" required>
+                        </div>
+                        <!-- Campo: RG -->
+                        <div class="col-md-4">
+                            <label for="inputRG" class="form-label">RG</label>
+                            <input type="number" class="form-control" id="inputRG" placeholder="00.000.000-0" required>
+                        </div>
+                        <!-- Campo: Ano Letivo -->
+                        <div class="col-md-4">
+                            <label for="inputYear" class="form-label">Ano Letivo</label>
+                            <input type="number" class="form-control" id="inputYear" placeholder="2025" required>
+                        </div>
+                        <!-- Campos de Termo, Folha, Livro e Matrícula -->
+                        <!-- linha 4 -->
+                        <div class="col-12">
+                            <div class="row">
+                                <h6>Certidao de Nascimento</h6>
+                                <div class="col-md-4">
+                                <label for="inputTermo" class="form-label">Termo</label>
+                                <input type="text" class="form-control" id="inputTermo" placeholder="00000" required>
+                                </div>
+                                <div class="col-md-4">
+                                <label for="inputFolha" class="form-label">Folha</label>
+                                <input type="text" class="form-control" id="inputFolha" placeholder="000" required>
+                                </div>
+                                <div class="col-md-4">
+                                <label for="inputLivro" class="form-label">Livro</label>
+                                <input type="text" class="form-control" id="inputLivro" placeholder="000" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Linha separada para Matrícula -->
+                        <!-- linha 5 -->
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                <label for="inputMatricula" class="form-label">Matrícula</label>
+                                <input type="text" class="form-control" id="inputMatricula" placeholder="0000000" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Campo: Turno -->
+                        <!-- linha 6 -->
+                        <div class="col-md-4">
+                            <label for="inputShift" class="form-label">Turno</label>
+                            <select id="inputShift" class="form-select" required>
+                                <option selected disabled>Selecione</option>
+                                <option>Manhã</option>
+                                <option>Tarde</option>
+                                <option>Integral</option>
+                            </select>
+                        </div>
+                        <!-- Campo: Tipo Sanguíneo -->
+                        <div class="col-md-4">
+                            <label for="inputBlood" class="form-label">Tipo Sanguíneo</label>
+                            <select id="inputBlood" class="form-select">
+                                <option selected disabled>Selecione</option>
+                                <option>-O</option>
+                                <option>+O</option>
+                                <option>-A</option>
+                                <option>+A</option>
+                                <option>-B</option>
+                                <option>+B</option>
+                                <option>-AB</option>
+                                <option>+AB</option>
+                            </select>
+                        </div>
+                        <!-- Campo: Raça -->
+                        <div class="col-md-4">
+                            <label for="inputRace" class="form-label">Raça</label>
+                            <select id="inputRace" class="form-select">
+                                <option selected disabled>Selecione</option>
+                                <option>Parda</option>
+                                <option>Branca</option>
+                                <option>Pretos</option>
+                                <option>Indígenas</option>
+                                <option>Amarela</option>
+                            </select>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Linha separada para Matrícula -->
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-md-12">
-                        <label for="inputMatricula" class="form-label">Matrícula</label>
-                        <input type="text" class="form-control" id="inputMatricula" placeholder="0000000" required>
-                        </div>
-                    </div>
-                </div>
-                <!-- Campo: Turno -->
-                <div class="col-md-1">
-                    <label for="inputShift" class="form-label">Turno</label>
-                    <select id="inputShift" class="form-select" required>
-                        <option selected disabled value="">Selecione</option>
-                        <option>Manhã</option>
-                        <option>Tarde</option>
-                        <option>Integral</option>
-                    </select>
-                </div>
-                <!-- Campo: Tipo Sanguíneo -->
-                <div class="col-md-1">
-                    <label for="inputBlood" class="form-label">Tipo Sanguíneo</label>
-                    <select id="inputBlood" class="form-select">
-                        <option selected disabled value="">Selecione</option>
-                        <option>-O</option>
-                        <option>+O</option>
-                        <option>-A</option>
-                        <option>+A</option>
-                        <option>-B</option>
-                        <option>+B</option>
-                        <option>-AB</option>
-                        <option>+AB</option>
-                    </select>
-                </div>
-                <!-- Campo: Raça -->
-                <div class="col-md-1">
-                    <label for="inputRace" class="form-label">Raça</label>
-                    <select id="inputRace" class="form-select">
-                        <option selected disabled value="">Selecione</option>
-                        <option>Parda</option>
-                        <option>Branca</option>
-                        <option>Pretos</option>
-                        <option>Indígenas</option>
-                        <option>Amarela</option>
-                    </select>
-                </div>
-                <!-- Campo: Necessidades Especiais -->
-                <div class="col-md-12">
-                    <label for="inputSpecialNeeds" class="form-label">Necessidades Especiais</label>
-                    <textarea type="text" class="form-control" id="inputSpecialNeeds"
-                        placeholder="Ex: Autismo, Dislexia, etc."></textarea>
-                </div>
-                <!-- Campo: Alergias -->
-                <div class="col-md-12">
-                    <label for="inputAllergies" class="form-label">Alergias</label>
-                    <textarea type="text" class="form-control" id="inputAllergies"
-                        placeholder="Ex: Latex, Anafilaxia, etc."></textarea>
-                </div>
-
-            <!-- Seção: Anamnese Inicial -->
-            <div class="row g-3">
-                <h3>Anamnese Inicial</h3>
-                <!-- Exemplo de campo para Matricula, se necessário -->
-                <div>
-                    <label for="inputMatri" class="form-label">Matricula</label>
-                </div>
-                <!-- Campo: Reside Com -->
-                <div class="col-md-6">
-                    <label for="inputReside">Reside Com</label>
-                    <input type="text" class="form-control" id="inputReside">
-                </div>
+                    <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
+                    <!-- fim dados aluno -->
             </div>
-
-            <!-- Seção: Dados dos Familiares -->
-            <div class="row g-3">
-                <h3 class="mt-4">Dados dos Familiares</h3>
                 
-                <!-- Dados da Mãe -->
+
+
+            <div class="step" id="step2">
+                <!-- Seção: Anamnese Inicial -->
                 <div class="row g-3">
+                    <h3>Anamnese Inicial</h3>
+                    <!-- Transferência -->
+                    <div class="col-md-4">
+                        <label for="inputMatri">Matricula</label>
+                        <select name="inputMatri" class="form-select" id="matri">
+                            <option selected disabled>Selecione</option>
+                            <option>Inicial</option>
+                            <option>Transferência Municipal/Estadual</option>
+                            <option>Transferência Particular</option>
+                        </select>
+                    </div>
+                    <!-- Irmãos -->
+                    <div class="col-md-4">
+                        <label for="inputBrothers">Tem Irmão(s) na Escola</label>
+                        <select name="inputBrothers" class="form-select" id="brothers" onchange="toggleCampoCondicional('brothers', 'campo-irmaos')">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Agrupando os campos extras -->
+                    <div class="col-md-12" id="campo-irmaos" style="display: none;">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label for="inputBrothersName">Qual(s) irmão(s)?</label>
+                                <input type="text" id="inputBrothersName" class="form-control" placeholder="Ex: João, Maria, Pedro">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputBrothersClass">Turma</label>
+                                <input type="text" id="inputBrothersClass" class="form-control" placeholder="Ex: 1A, 2B, 3C">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- acompanhamento especial -->
+                    <div class="col-md-4">
+                        <label for="inputSpecial">Tem acompanhamento de especialista</label>
+                        <select name="inputSpecial" class="form-select" id="special" onchange="toggleCampoCondicional('special', 'campo-especialista', 'qualEspecialista')">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                    <!-- Campo que será exibido se o usuário escolher "Sim" -->
+                    <div class="col-md-8" id="campo-especialista" style="display: none;">
+                        <label for="qualEspecialista">Qual especialista?</label>
+                        <input type="text" id="qualEspecialista" class="form-control" placeholder="Ex: Neurologista, Fonoaudiólogo">
+                    </div>
+                    <!-- alergias -->
+                    <div class="col-md-4">
+                        <label for="inputAlergias">Tem alergias (alimentação / remédios...)</label>
+                        <select name="inputAlergias" class="form-select" id="alergias" onchange="toggleCampoCondicional('alergias', 'campo-alergias', 'qualAlergias')">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                    <!-- Campo que será exibido se o usuário escolher "Sim" -->
+                    <div class="col-md-8" id="campo-alergias" style="display: none;">
+                        <label for="qualAlergias">Qual alergia?</label>
+                        <input type="text" id="qualAlergias" class="form-control" placeholder="Ex: Alimentação, Remédios...">
+                    </div>
+                    <!-- medicamento -->
+                    <div class="col-md-4">
+                        <label for="inputMedicine">Tem algum medicamento em uso</label>
+                        <select name="inputMedicine" class="form-select" id="medicine" onchange="toggleCampoCondicional('medicine', 'campo-medicine', 'qualMedicine')">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                    <!-- Campo que será exibido se o usuário escolher "Sim" -->
+                    <div class="col-md-8" id="campo-medicine" style="display: none;">
+                        <label for="qualMedicine">Qual medicamento?</label>
+                        <input type="text" id="qualMedicine" class="form-control" placeholder="Ex: Aspirina, Paracetamol...">
+                    </div>
+                    <!-- Campo: Reside Com -->
+                    <div class="col-md-4">
+                        <label for="inputReside">Reside Com</label>
+                        <input type="text" class="form-control" id="inputReside">
+                    </div>
+                </div>
+                <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
+                <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
+                <!-- fim anamnese -->
+            </div>
+            
+
+            <div class="step" id="step3">
+                <!-- Seção: Dados dos Familiares -->
+                <div class="row g-3">
+                    <h3 class="mt-4">Dados dos Familiares</h3>
                     <h5>Dados da Mãe</h5>
                     <!-- Nome da Mãe -->
                     <div class="col-md-4">
@@ -198,7 +276,7 @@
                         <input type="text" class="form-control" id="inputMotherName4" placeholder="Maria da Silva">
                     </div>
                     <!-- Data de Nascimento da Mãe -->
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                         <label for="inputBirthDate" class="form-label">Data de Nascimento</label>
                         <input type="date" class="form-control" id="inputBirthDate">
                     </div>
@@ -213,27 +291,27 @@
                         <input type="number" class="form-control" id="inputCEP" placeholder="00000-000">
                     </div>
                     <!-- CPF -->
-                    <div class="col-md-1">
+                    <div class="col-md-4">
                         <label for="inputCPF" class="form-label">CPF</label>
                         <input type="number" class="form-control" id="inputCPF" placeholder="000.000.000-00" required>
                     </div>
                     <!-- RG -->
-                    <div class="col-md-1">
+                    <div class="col-md-4">
                         <label for="inputRG" class="form-label">RG</label>
                         <input type="number" class="form-control" id="inputRG" placeholder="00.000.000-0" required>
                     </div>
                     <!-- Telefone -->
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                         <label for="inputFone" class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" id="inputFone" placeholder="(00) 00000-0000">
+                        <input type="tel" class="form-control" id="inputMotherFone" placeholder="(00) 00000-0000">
                     </div>
                     <!-- Email -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="inputEmail4" class="form-label">Email</label>
                         <input type="email" class="form-control" id="inputEmail4" placeholder="nome@example.com">
                     </div>
                     <!-- Profissão -->
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                         <label for="inputProfession" class="form-label">Profissão</label>
                         <input type="text" class="form-control" id="inputProfession">
                     </div>
@@ -243,144 +321,168 @@
                         <input type="text" class="form-control" id="inputWorkplace">
                     </div>
                     <!-- Telefone do Trabalho -->
-                    <div class="col-md-2">
+                    <div class="col-md-4">
                         <label for="inputFone" class="form-label">Telefone do Trabalho</label>
-                        <input type="tel" class="form-control" id="inputFone" placeholder="(00) 00000-0000">
+                        <input type="tel" class="form-control" id="inputMotherWorkFone" placeholder="(00) 00000-0000">
                     </div>
-                </div>
+                </div>     
+                <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
+                <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
+                <!-- fim dados da mãe -->
+            </div>
 
-                <!-- Dados do Pai -->
+                <div class="step" id="step4">
+                    <!-- Dados do Pai -->
+                    <div class="row g-3">
+                        <h3>Dados dos Familiares</h3>
+                        <h5>Dados do Pai</h5>
+                        <!-- Nome do Pai -->
+                        <div class="col-md-4">
+                            <label for="inputFatherName4" class="form-label">Nome do Pai</label>
+                            <input type="text" class="form-control" id="inputFatherName4" placeholder="Manoel da Silva">
+                        </div>
+                        <!-- Data de Nascimento do Pai -->
+                        <div class="col-md-4">
+                            <label for="inputBirthDate" class="form-label">Data de Nascimento</label>
+                            <input type="date" class="form-control" id="inputBirthDate">
+                        </div>
+                        <!-- Endereço -->
+                        <div class="col-md-4">
+                            <label for="inputAddress" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Rua Manoel Gomes, 000" required>
+                        </div>
+                        <!-- CEP -->
+                        <div class="col-md-4">
+                            <label for="inputCEP" class="form-label">CEP</label>
+                            <input type="number" class="form-control" id="inputCEP" placeholder="00000-000">
+                        </div>
+                        <!-- CPF -->
+                        <div class="col-md-4">
+                            <label for="inputCPF" class="form-label">CPF</label>
+                            <input type="number" class="form-control" id="inputCPF" placeholder="000.000.000-00" required>
+                        </div>
+                        <!-- RG -->
+                        <div class="col-md-4">
+                            <label for="inputRG" class="form-label">RG</label>
+                            <input type="number" class="form-control" id="inputRG" placeholder="00.000.000-0" required>
+                        </div>
+                        <!-- Telefone -->
+                        <div class="col-md-4">
+                            <label for="inputFone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="inputFatherFone" placeholder="(00) 00000-0000">
+                        </div>
+                        <!-- Email -->
+                        <div class="col-md-4">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="nome@example.com">
+                        </div>
+                        <!-- Profissão -->
+                        <div class="col-md-4">
+                            <label for="inputProfession" class="form-label">Profissão</label>
+                            <input type="text" class="form-control" id="inputProfession">
+                        </div>
+                        <!-- Local de Trabalho -->
+                        <div class="col-4">
+                            <label for="inputWorkplace" class="form-label">Local de Trabalho</label>
+                            <input type="text" class="form-control" id="inputWorkplace">
+                        </div>
+                        <!-- Telefone do Trabalho -->
+                        <div class="col-md-4">
+                            <label for="inputFone" class="form-label">Telefone do Trabalho</label>
+                            <input type="tel" class="form-control" id="inputFatherWorkFone" placeholder="(00) 00000-0000">
+                        </div>
+                    </div>
+                    <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
+                    <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
+                    <!-- fim dados do pai -->
+                </div>
+                
+
+
+            <div class="step" id="step5">
+                <!-- Seção: Responsável Financeiro -->
                 <div class="row g-3">
-                    <h5>Dados do Pai</h5>
-                    <!-- Nome do Pai -->
-                    <div class="col-md-4">
-                        <label for="inputFatherName4" class="form-label">Nome do Pai</label>
-                        <input type="text" class="form-control" id="inputFatherName4" placeholder="Manoel da Silva">
-                    </div>
-                    <!-- Data de Nascimento do Pai -->
-                    <div class="col-md-2">
-                        <label for="inputBirthDate" class="form-label">Data de Nascimento</label>
-                        <input type="date" class="form-control" id="inputBirthDate">
-                    </div>
-                    <!-- Endereço -->
-                    <div class="col-md-4">
-                        <label for="inputAddress" class="form-label">Endereço</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Rua Manoel Gomes, 000" required>
-                    </div>
-                    <!-- CEP -->
-                    <div class="col-md-4">
-                        <label for="inputCEP" class="form-label">CEP</label>
-                        <input type="number" class="form-control" id="inputCEP" placeholder="00000-000">
-                    </div>
-                    <!-- CPF -->
-                    <div class="col-md-1">
-                        <label for="inputCPF" class="form-label">CPF</label>
-                        <input type="number" class="form-control" id="inputCPF" placeholder="000.000.000-00" required>
-                    </div>
-                    <!-- RG -->
-                    <div class="col-md-1">
-                        <label for="inputRG" class="form-label">RG</label>
-                        <input type="number" class="form-control" id="inputRG" placeholder="00.000.000-0" required>
+                    <h3 class="mt-4">Responsável Financeiro</h3>
+                    <!-- Nome -->
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="João da Silva" required>
                     </div>
                     <!-- Telefone -->
-                    <div class="col-md-2">
+                    <div class="col-md-6">
                         <label for="inputFone" class="form-label">Telefone</label>
                         <input type="tel" class="form-control" id="inputFone" placeholder="(00) 00000-0000">
                     </div>
-                    <!-- Email -->
+                </div>
+                <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
+                <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
+                <!-- fim dados do responsável financeiro -->
+            </div>
+
+            <div class="step" id="step6">
+                <!-- Seção: Observações e Documentos -->
+                <div class="row g-3">
+                    <h3 class="mt-4">Observações</h3>
+                    <!-- Campo para observações sobre pessoas autorizadas a buscar o aluno -->
+                    <div class="col-md-12">
+                        <label for="inputObservations" class="form-label">Pessoas Autorizadas a Buscar na Escola</label>
+                        <textarea class="form-control" id="inputObservations" rows="1" placeholder="Nomes"></textarea>
+                    </div>
+                    <!-- Lista de documentos com checkbox -->
+                    <div id= "documentos" class="row">
+                        <div class="col-4 col-4 mb-2 form-check">
+                            <input class="form-check-input" type="checkbox" id="inputCert">
+                            <label class="form-check-label" for="inputCert">Certidão de Nascimento</label>
+                        </div>
+                        <div class="col-4 col-4 mb-2 form-check">
+                            <input class="form-check-input" type="checkbox" id="inputCartVac">
+                            <label class="form-check-label" for="inputCartVac">Carteira de Vacinação</label>
+                        </div>
+                        <div class="col-4 col-4 mb-2 form-check">
+                            <input class="form-check-input" type="checkbox" id="inputDecEsc">
+                            <label class="form-check-label" for="inputDecEsc">Declaração Escolar</label>
+                        </div>
+                        <div class="col-4 mb-2 form-check">
+                            <input class="form-check-input" type="checkbox" id="inputComRes">
+                            <label class="form-check-label" for="inputComRes">Comprovante de Residência</label>
+                        </div>
+                        <div class="col-4 mb-2 form-check">
+                            <input class="form-check-input" type="checkbox" id="inputFotos">
+                            <label class="form-check-label" for="inputFotos">Fotos</label>
+                        </div>
+                        <div class="col-4 mb-2 form-check">
+                            <input class="form-check-input" type="checkbox" id="inputRGCPF">
+                            <label class="form-check-label" for="inputRGCPF">RG/CPF Mãe</label>
+                        </div>
+                        <div class="col-4 mb-2 form-check">
+                            <input class="form-check-input" type="checkbox" id="inputRGCPF">
+                            <label class="form-check-label" for="inputRGCPF">RG/CPF Pai</label>
+                        </div>
+                        <div class="col-4 mb-2 form-check">
+                            <input class="form-check-input" type="checkbox" id="inputHist">
+                            <label class="form-check-label" for="inputHist">Histórico Escolar</label>
+                        </div>
+                    </div>
+                    <!-- Campo: Valor do Contrato -->
                     <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="nome@example.com">
+                        <label for="inputValor">Valor do Contrato</label>
+                        <input type="number" class="form-control" id="inputValor">
                     </div>
-                    <!-- Profissão -->
-                    <div class="col-md-2">
-                        <label for="inputProfession" class="form-label">Profissão</label>
-                        <input type="text" class="form-control" id="inputProfession">
+                    <div class="col-md-6">
+                        <label for="inputVencimento">Vencimento</label>
+                        <input type="date" class="form-control" id="inputVencimento">
                     </div>
-                    <!-- Local de Trabalho -->
-                    <div class="col-4">
-                        <label for="inputWorkplace" class="form-label">Local de Trabalho</label>
-                        <input type="text" class="form-control" id="inputWorkplace">
-                    </div>
-                    <!-- Telefone do Trabalho -->
-                    <div class="col-md-2">
-                        <label for="inputFone" class="form-label">Telefone do Trabalho</label>
-                        <input type="tel" class="form-control" id="inputFone" placeholder="(00) 00000-0000">
+                    <!-- Botões de ação -->
+                    <div class="col-12">
+                        <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="button" class="btn btn-success" id="exportCsv">Exportar CSV</button>
+                        <button type="button" class="btn btn-danger" id="exportPdf">Exportar PDF</button>
                     </div>
                 </div>
+                <!-- fim observações e documentos -->
             </div>
-
-            <!-- Seção: Responsável Financeiro -->
-            <div class="row g-3">
-                <h3 class="mt-4">Responsável Financeiro</h3>
-                <!-- Nome -->
-                <div class="col-md-6">
-                    <label for="inputName" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="João da Silva" required>
-                </div>
-                <!-- Telefone -->
-                <div class="col-md-2">
-                    <label for="inputFone" class="form-label">Telefone</label>
-                    <input type="tel" class="form-control" id="inputFone" placeholder="(00) 00000-0000">
-                </div>
-            </div>
-
-            <!-- Seção: Observações e Documentos -->
-            <div class="row g-3">
-                <h3 class="mt-4">Observações</h3>
-                <!-- Campo para observações sobre pessoas autorizadas a buscar o aluno -->
-                <div class="col-md-12">
-                    <label for="inputObservations" class="form-label">Pessoas Autorizadas a Buscar na Escola</label>
-                    <textarea class="form-control" id="inputObservations" rows="3" placeholder="Nomes"></textarea>
-                </div>
-                <!-- Lista de documentos com checkbox -->
-                <div id= "documentos" class="row">
-                    <div class="col-4 col-4 mb-2 form-check">
-                        <input class="form-check-input" type="checkbox" id="inputCert">
-                        <label class="form-check-label" for="inputCert">Certidão de Nascimento</label>
-                    </div>
-                    <div class="col-4 col-4 mb-2 form-check">
-                        <input class="form-check-input" type="checkbox" id="inputCartVac">
-                        <label class="form-check-label" for="inputCartVac">Carteira de Vacinação</label>
-                    </div>
-                    <div class="col-4 col-4 mb-2 form-check">
-                        <input class="form-check-input" type="checkbox" id="inputDecEsc">
-                        <label class="form-check-label" for="inputDecEsc">Declaração Escolar</label>
-                    </div>
-                    <div class="col-4 mb-2 form-check">
-                        <input class="form-check-input" type="checkbox" id="inputComRes">
-                        <label class="form-check-label" for="inputComRes">Comprovante de Residência</label>
-                    </div>
-                    <div class="col-4 mb-2 form-check">
-                        <input class="form-check-input" type="checkbox" id="inputFotos">
-                        <label class="form-check-label" for="inputFotos">Fotos</label>
-                    </div>
-                    <div class="col-4 mb-2 form-check">
-                        <input class="form-check-input" type="checkbox" id="inputRGCPF">
-                        <label class="form-check-label" for="inputRGCPF">RG/CPF Mãe</label>
-                    </div>
-                    <div class="col-4 mb-2 form-check">
-                        <input class="form-check-input" type="checkbox" id="inputRGCPF">
-                        <label class="form-check-label" for="inputRGCPF">RG/CPF Pai</label>
-                    </div>
-                    <div class="col-4 mb-2 form-check">
-                        <input class="form-check-input" type="checkbox" id="inputHist">
-                        <label class="form-check-label" for="inputHist">Histórico Escolar</label>
-                    </div>
-                </div>
-                <!-- Campo: Valor do Contrato -->
-                <div class="col-12">
-                    <label for="inputValor" class="form-label">Valor do Contrato</label>
-                    <input type="number" class="form-control" id="inputValor">
-                </div>
-
-                <!-- Botões de ação -->
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
-                    <button type="button" class="btn btn-success" id="exportCsv">Exportar CSV</button>
-                    <button type="button" class="btn btn-danger" id="exportPdf">Exportar PDF</button>
-                </div>
-            </div>
+            <!-- fim formulário -->
         </form>
     </main>
 
