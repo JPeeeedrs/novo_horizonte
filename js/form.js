@@ -10,13 +10,6 @@ function toggleCampoCondicional(selectId, campoId, inputId) {
         campo.style.display = 'none';
         input.value = '';
     }
-
-    // if (select.value === 'particular' || 'municipal') {
-    //     campo.style.display = 'block';
-    // } else {
-    //     campo.style.display = 'none';
-    //     input.value = '';
-    // }
 }
 
 
