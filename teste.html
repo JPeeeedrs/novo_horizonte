@@ -180,13 +180,19 @@
                     <!-- Transferência -->
                     <div class="col-md-4">
                         <label for="inputMatri">Matricula</label>
-                        <select name="inputMatri" class="form-select" id="matri">
-                            <option selected disabled>Selecione</option>
-                            <option>Inicial</option>
-                            <option>Transferência Municipal/Estadual</option>
-                            <option>Transferência Particular</option>
+                        <select name="inputMatri" class="form-select" id="matri" onchange="toggleCampoCondicional('matri', 'inputSchool')">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="inicial">Inicial</option>
+                            <option value="municipal">Transferência Municipal/Estadual</option>
+                            <option value="particular">Transferência Particular</option>
                         </select>
                     </div>
+
+                    <div class="col-md-8" id="inputSchool" style="display: none;">
+                        <label for="inputSchool">Qual Escola</label>
+                        <input type="text" id="inputSchool" class="form-control" placeholder="Escola">
+                    </div>
+
                     <!-- Irmãos -->
                     <div class="col-md-4">
                         <label for="inputBrothers">Tem Irmão(s) na Escola</label>

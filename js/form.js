@@ -4,12 +4,19 @@ function toggleCampoCondicional(selectId, campoId, inputId) {
     const campo = document.getElementById(campoId);
     const input = document.getElementById(inputId);
 
-    if (select.value === 'sim') {
+    if (select.value === 'sim' || select.value === 'particular' || select.value === 'municipal') {
         campo.style.display = 'block';
     } else {
         campo.style.display = 'none';
         input.value = '';
     }
+
+    // if (select.value === 'particular' || 'municipal') {
+    //     campo.style.display = 'block';
+    // } else {
+    //     campo.style.display = 'none';
+    //     input.value = '';
+    // }
 }
 
 
