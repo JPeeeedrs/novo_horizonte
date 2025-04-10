@@ -78,6 +78,7 @@ main {
     margin: 10px 5px;           /* margem para espaçamento entre botões */
 }
 
+
   /* Efeito de hover */
 .btn-nav:hover {
     background-color: #a52a2a;  /* cor de fundo ao passar o mouse */
@@ -89,6 +90,8 @@ main {
     outline: none;
     box-shadow: 0 0 0 3px rgba(190, 56, 55, 0.5);
 }
+
+/* .bnt-primary */
 
 .form-label {
     text-align: center;
@@ -138,6 +141,12 @@ footer span {
 @media (max-width: 576px) {
     #nav-logo span {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    #documentos {
+        margin-left: -10px;
     }
 }
 
