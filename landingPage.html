@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags e configurações iniciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ícone do site -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <!-- Estilos customizados -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Centro Educacional Novo Horizonte</title>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <!-- Barra de navegação com logo e nome da instituição -->
+        <nav class="navbar bg-body-tertiary d-flex justify-content-center position-relative" id="nav-logo">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="img/logo.png" alt="Logo" width="75" height="75" class="d-inline-block align-text-top">
+                </a>
+                <span class="position-absolute start-50 translate-middle-x">Centro Educacional Novo Horizonte</span>
+            </div>
+        </nav>
+        <!-- Barra de navegação com os links principais -->
+        <nav class="navbar" style="background-color: #902121;" id="nav-elementos">
+            <a class="nav-link" href="landingPage.html">Início</a>
+            <a class="nav-link" href="formulario.html">Matrículas</a>
+            <a class="nav-link" href="#">Alunos</a>
+            <a class="nav-link" href="#">Calendário</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+                    <!-- Carrossel de Imagens -->
+                    <div id="schoolCarousel" class="carousel slide my-4 carousel-container" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#schoolCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/fachadaEscola.png" class="d-block w-100" alt="Escola">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/alunos2.png" class="d-block w-100" alt="Alunos">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/alunos3.png" class="d-block w-100" alt="Biblioteca">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/alunos1.png" class="d-block w-100" alt="Laboratório">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+            <!-- Nossa Missão - -->
+            <section class="container-fluid my-5">
+                <div class="row align-items-center">
+
+                <div class="col-md-6 p-4">
+                    <h2 class="mb-4">Nossa Missão</h2>
+                    <p class="mission-text">
+                        A finalidade é proporcionar um ambiente motivador, para que as potencialidades de cada indivíduo sejam expressadas, adquirindo conhecimentos únicos e novas vivências de acordo com o dia a dia nas salas de aula.
+                    </p>
+                </div>
+
+                <div class="col-md-6 p-4">
+                        <div class="mission-image-container">
+                            <img src="img/profGenerica.jpg" class="img-fluid rounded" alt="Escola">
+                </div>
+            </div>
+                            </div>
+            </section>
+
+<!-- CITAÇÃO DIRETORA -->
+<section class="container-fluid my-5">
+    <div class="director-quote-section">
+        <div class="row align-items-center">
+            <!-- Quote -->
+            <div class="col-md-7 p-5">
+                <blockquote class="director-quote">
+                    " A instituição planeja estrategicamente para o ano letivo, projetos inovadores e multidisciplinares a fim de estimular o ensino-aprendizado, além de promover relações interpessoais entre colegas, funcionários, fortalecendo o respeito às diferentes crenças e culturas da região e do país."
+                </blockquote>
+</div>
+            <!-- Director Image and Name -->
+            <div class="col-md-5 d-flex flex-column align-items-center p-4">
+                <div class="director-image-container">
+                    <img src="img/diretora.png" alt="Diretora Vanessa Lima" class="director-image">
+</div>
+                <h3 class="director-name mt-3">Vanessa Lima</h3>
+                <p class="director-title">Diretora</p>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- Segmentos -->
+            <section class="container-fluid my-5">
+                <h2 class="text-center mb-5">Segmentos</h2>
+                <div class="row justify-content-center">
+                    <!-- Segmento 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="segmento-card text-center">
+                            <div class="segmento-image-container">
+                                <img src="img/ensinoInfantil.jpg" class="img-fluid">
+                            </div>
+                            <h3 class="segmento-title mt-3">Educação Infantil</h3>
+                            <p class="segmento-description">
+                                Desenvolvimento inicial com foco em brincadeiras e aprendizado, em que estimulamos a criatividade, a liberdade de se expressar e socialização, sempre com cuidado e carinho.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Segmento 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="segmento-card text-center">
+                            <div class="segmento-image-container">
+                                <img src="img/fundamental.jpg">
+                </div>
+                            <h3 class="segmento-title mt-3">Ensino Fundamental I</h3>
+                            <p class="segmento-description">
+                                Nos anos iniciais do ensino fundamental (do 1º ao 5º ano),começamos a explorar com nossos alunos o universo das letras, nos aventuraramos nas histórias dos números e descobrimos as operações matemáticas.
+                            </p>
+        </div>
+                    </div>
+
+                    <!-- Segmento 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="segmento-card text-center">
+                            <div class="segmento-image-container">
+                                <img src="img/fundamental2.jpg">
+                            </div>
+                            <h3 class="segmento-title mt-3">Ensino Fundamental II</h3>
+                            <p class="segmento-description">
+                                Nos anos finais do ensino fundamental (do 6º ao 9º ano), nossa escola se dedica a estimular o crescimento intelectual e acadêmico dos estudantes, incentivando uma abordagem interdisciplinar e multidisciplinar no processo de aprendizagem.
+                            </p>
+                        </div>
+                    </div>
+        </div>
+            </section>
+
+             <!-- Split Carousel -->
+<div id="splitCarousel" class="carousel slide split-carousel-container" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Item 1 -->
+        <div class="carousel-item active">
+            <div class="split-carousel-content">
+                <div class="text-content">
+                    <h2>Ballet</h2>
+                    <p>O ballet é mais do que uma dança — é uma forma de expressão, disciplina e sensibilidade. Nas nossas aulas, os alunos trabalham postura, equilíbrio, coordenação e autoestima, tudo em um ambiente acolhedor e divertido. Através do movimento e da música, as crianças aprendem a se conhecer melhor, a respeitar o ritmo do outro e a se expressar com leveza e confiança.</p>
+                </div>
+                <div class="image-content">
+                    <img src="img/ballet.png" alt="Educação Infantil">
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="carousel-item">
+            <div class="split-carousel-content">
+                <div class="text-content">
+                    <h2>Informática</h2>
+                    <p>Aqui na Novo Horizonte reconhecemos que estamos na era digital. Queremos preparar nossos alunos para os desafios e oportunidades do mundo moderno. Por isso, oferecemos aulas de Informática desde cedo, com foco no desenvolvimento do pensamento lógico, criatividade e no uso responsável da tecnologia.</p>
+                </div>
+                <div class="image-content">
+                    <img src="img/computadores.png" alt="Ensino Fundamental I">
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="carousel-item">
+            <div class="split-carousel-content">
+                <div class="text-content">
+                    <h2>Capoeira</h2>
+                    <p>Por meio dessa arte brasileira que une luta, dança e música, nossos alunos aprendem sobre disciplina, trabalho em equipe, coordenação motora e a rica história cultural do nosso país. As aulas são dinâmicas, inclusivas e despertam o interesse dos pequenos de forma lúdica e envolvente.</p>
+                </div>
+                <div class="image-content">
+                    <img src="img/capoeira.png" alt="Ensino Fundamental II">
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="carousel-item">
+            <div class="split-carousel-content">
+                <div class="text-content">
+                    <h2>Jiu-Jítsu</h2>
+                    <p>As aulas de Jiu-Jitsu ensinam muito mais do que técnicas de defesa pessoal — elas trabalham o respeito, a disciplina, o autocontrole e a confiança. De forma segura e orientada, nossos alunos aprendem a se conhecer melhor, a lidar com desafios e a desenvolver a concentração e a cooperação, sempre em um ambiente de amizade e superação.</p>
+                </div>
+                <div class="image-content">
+                    <img src="img/jiujitsu.png" alt="Educação Ambiental">
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="carousel-item">
+            <div class="split-carousel-content">
+                <div class="text-content">
+                    <h2>Educação Física</h2>
+                    <p>O movimento faz parte do aprendizado! Nas aulas de Educação Física, estimulamos hábitos saudáveis, o trabalho em equipe e a superação de limites. Com atividades que vão desde jogos cooperativos até esportes e circuitos motores, nossos alunos se desenvolvem com energia, disciplina e alegria.</p>
+                </div>
+                <div class="image-content">
+                    <img src="img/EF.png" alt="Educação Física">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#splitCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#splitCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#splitCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#splitCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#splitCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#splitCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#splitCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+</div>
+
+
+            <!-- Localização Google Maps -->
+            <section class="container-fluid mb-5">
+                <div class="container mb-4">
+                    <h2 class="text-center">Nossa Localização</h2>
+                    <p class="text-center">R. Amapá, 55 - Araras, Teresópolis - RJ, 25958-030</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.6441737439946!2d-42.97891562414794!3d-22.56466092895831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x990950d098b55f%3A0x5b49336bd1a24!2sR.%20Amap%C3%A1%2C%2055%20-%20Araras%2C%20Teres%C3%B3polis%20-%20RJ%2C%2025958-030!5e0!3m2!1sen!2sbr!4v1709595849157!5m2!1sen!2sbr"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer class="footer-custom text-white">
+        <div class="footer-left">
+            <img src="img/logo.png" alt="Logo" class="footer-img">
+            <span class="footer-nome-escola">Centro Educacional Novo Horizonte</span>
+        </div>
+    
+        <div class="footer-contact">
+            <strong>Contatos</strong>
+            <div class="footer-phone">Telefone: (00) 1234-5678</div>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/novohorizontetere" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com/centroeducnovohorizonteoficial/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/form.js" defer></script>
+    <script src="js/exportar.js" defer></script>
+</body>
+</html>

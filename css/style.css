@@ -13,6 +13,7 @@ body {
     flex-direction: column;
 }
 
+/* Header Styles */
 #nav-logo a {
     display: flex;
     justify-content: center;
@@ -39,14 +40,67 @@ body {
     color: #000;
 }
 
+/* Main Content */
 main {
     background-color: #fff;
     flex: 1;
+}
+
+/* Carousel Styles - Just rounded corners */
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden; /* This ensures the content respects the border radius */
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Sidebar Styles */
+.barra-lateral {
+    min-height: 100vh;
+    border-right: 1px solid #dee2e6;
+}
+
+.barra-lateral:last-child {
+    border-right: none;
+    border-left: 1px solid #dee2e6;
+}
+
+/* Map Styles */
+.map-container {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #902121;
     display: flex;
     justify-content: center;
     align-items: center;
+    bottom: 0;
 }
 
+footer span {
+    margin: 0 5vw;
+    color: #fff;
+}
+
+/* Form Styles */
 #formulario {
     margin: 0 15vw;
     background-color: #c5c5c5;
@@ -66,33 +120,30 @@ main {
     display: block;
 }
 
+/* Button Styles */
 .btn-nav {
-    background-color: #BE3837;  /* cor de fundo */
-    color: #fff;                /* cor do texto */
-    border: none;               /* sem borda */
-    padding: 10px 20px;         /* espaçamento interno */
-    font-size: 1rem;            /* tamanho da fonte */
-    border-radius: 5px;         /* cantos arredondados */
-    cursor: pointer;            /* cursor pointer ao passar o mouse */
+    background-color: #902121;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+        font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin: 10px 5px;           /* margem para espaçamento entre botões */
-}
+    margin: 10px 5px;
+    }
 
-
-  /* Efeito de hover */
 .btn-nav:hover {
-    background-color: #a52a2a;  /* cor de fundo ao passar o mouse */
-    transform: scale(1.05);     /* leve aumento no tamanho */
+    background-color: #7a1c1c;
+    transform: scale(1.05);
 }
 
-  /* Efeito de foco para acessibilidade */
 .btn-nav:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(190, 56, 55, 0.5);
+    box-shadow: 0 0 0 3px rgba(144, 33, 33, 0.5);
 }
 
-/* .bnt-primary */
-
+/* Form Elements */
 .form-label {
     text-align: center;
 }
@@ -106,7 +157,7 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
     appearance: textfield;
-    width: 100%; /* garante que ocupe toda a largura da coluna */
+    width: 100%;
 }
 
 #documentos {
@@ -118,23 +169,75 @@ input[type="number"] {
     justify-content: space-between;
 }
 
-footer {
-    background-color: #BE3837;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
+/* Director Quote Section Styles */
+.director-quote-section {
+    background-color: #902121;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
 }
 
-footer span {
-    margin: 0 5vw;
-    color: #fff;
+.director-quote {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    font-style: italic;
+    position: relative;
+    padding-left: 40px;
 }
 
-/* Responsividade */
+.director-quote::before {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    opacity: 0.8;
+}
+
+.director-image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.director-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.director-name {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.director-title {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments for director section */
 @media (max-width: 768px) {
     #nav-logo span {
         font-size: 30px;
+    }
+
+    .director-quote {
+        font-size: 1.2rem;
+        padding-left: 30px;
+    }
+
+    .director-image-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .director-name {
+        font-size: 1.5rem;
     }
 }
 
@@ -154,4 +257,257 @@ footer span {
     #nav-logo span {
         font-size: 15px;
     }
+}
+
+/* Segmentos Section Styles */
+.segmento-card {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.segmento-card:hover {
+    transform: translateY(-5px);
+}
+
+.segmento-image-container {
+    width: 230px;
+    height: 230px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 4px solid #902121;
+    padding: 3px;
+}
+
+.segmento-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.segmento-title {
+    color: #333;
+    font-size: 1.4rem;
+    margin: 15px 0;
+}
+
+.segmento-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 10px;
+}
+
+/* Responsive adjustments for segmentos */
+@media (max-width: 768px) {
+    .segmento-image-container {
+        width: 180px;
+        height: 180px;
+        border-width: 3px;
+    }
+    
+    .segmento-title {
+        font-size: 1.2rem;
+    }
+    
+    .segmento-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Nossa Missão Section Styles */
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.mission-image-container {
+    padding: 3px;
+    border: 4px solid #902121;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mission-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Responsive adjustments for mission section */
+@media (max-width: 768px) {
+    .mission-text {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* Carousel Styles - Just rounded corners */
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden; /* This ensures the content respects the border radius */
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Responsive adjustments for carousel */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 200px;
+    }
+}
+
+/* Split Carousel Styles */
+.split-carousel-container {
+    width: 100%;
+    margin: 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.split-carousel-content {
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+
+.text-content {
+    flex: 1;
+    padding: 110px;
+    background-color: #e1e1e1;
+}
+
+.text-content h2 {
+    color: #902121;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.image-content {
+    flex: 1;
+    height: 400px;
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Custom carousel controls for split carousel */
+.split-carousel-container .carousel-control-prev,
+.split-carousel-container .carousel-control-next {
+    width: 5%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.split-carousel-container .carousel-indicators {
+    bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .split-carousel-content {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .text-content {
+        padding: 20px;
+    }
+    
+    .text-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .text-content p {
+        font-size: 1rem;
+    }
+    
+    .image-content {
+        height: 300px;
+    }
+}
+/* Footer Styles */
+.footer-custom {
+    background-color: #902121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+/* Logo e nome da escola */
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-nome-escola {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Contatos alinhado à direita */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.footer-contact strong {
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.footer-phone {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-icons a {
+    color: white;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #ccc;
 }

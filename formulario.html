@@ -1,505 +1,452 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Meta tags e configurações iniciais -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ícone do site -->
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <!-- Estilos customizados -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+<!-- Meta tags e configurações iniciais -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Ícone do site -->
+<link rel="icon" type="image/png" href="img/logo.png">
+<!-- Estilos customizados -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Formulário</title>
+<title>Formulário</title>
 </head>
 <body>
-    <!-- Cabeçalho do site -->
-    <header>
-        <!-- Barra de navegação com logo e nome da instituição -->
-        <nav class="navbar bg-body-tertiary d-flex justify-content-center position-relative" id="nav-logo">
-            <div class="container-fluid">
-                <a class="navbar-brand">
-                    <img src="img/logo.png" alt="Logo" width="75" height="75" class="d-inline-block align-text-top">
-                </a>
-                <span class="position-absolute start-50 translate-middle-x">Centro Educacional Novo Horizonte</span>
-            </div>
-        </nav>
+<!-- Cabeçalho do site -->
+<header>
+    <!-- Barra de navegação com logo e nome da instituição -->
+    <nav class="navbar bg-body-tertiary d-flex justify-content-center position-relative" id="nav-logo">
+    <div class="container-fluid">
+        <a class="navbar-brand">
+        <img src="img/logo.png" alt="Logo" width="75" height="75" class="d-inline-block align-text-top">
+        </a>
+        <span class="position-absolute start-50 translate-middle-x">Centro Educacional Novo Horizonte</span>
+    </div>
+    </nav>
+    <!-- Barra de navegação com os links principais -->
+    <nav class="navbar" style="background-color: #BE3837;" id="nav-elementos">
+    <a class="nav-link" href="landingPage.html">Início</a>
+    <a class="nav-link" href="formulario.html">Matrículas</a>
+    <a class="nav-link" href="#">Alunos</a>
+    <a class="nav-link" href="#">Calendário</a>
+    </nav>
+</header>
 
-        <!-- Barra de navegação com os links principais -->
-        <nav class="navbar" style="background-color: #BE3837;" id="nav-elementos">
-            <a class="nav-link" href="#">Início</a>
-            <a class="nav-link" href="#">Matrículas</a>
-            <a class="nav-link" href="#">Alunos</a>
-            <a class="nav-link" href="#">Calendário</a>
-        </nav>
-    </header>
+<!-- Conteúdo principal -->
+<main>
+    <!-- Início do formulário -->
+    <form id="formulario">
 
-    <!-- Conteúdo principal -->
-    <main>
-        <!-- Início do formulário -->
-        <form id="formulario">
-
-            <div class="step active" id="step1">
-                <!-- Seção: Dados do Aluno -->
-                    <div class="row g-3">
-                        <h3 class="mt-4">Dados do Aluno</h3>
-                        <!-- Campo: Nome do aluno -->
-                        <!-- linha 1 -->
-                        <div class="col-md-4">
-                            <label for="inputName4" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="inputName4" placeholder="João da Silva" required>
-                        </div>
-                        <!-- Campo: Idade -->
-                        <div class="col-md-4">
-                            <label for="inputAge" class="form-label">Idade</label>
-                            <input type="number" class="form-control" id="inputAge" placeholder="00" required>
-                        </div>
-                        <!-- Campo: Data de Nascimento -->
-                        <div class="col-md-4">
-                            <label for="inputBirthDate" class="form-label">Data de Nascimento</label>
-                            <input type="date" class="form-control" id="inputBirthDate" placeholder="00/00/0000" required>
-                        </div>
-                        <!-- Campo: Naturalidade -->
-                        <!-- linha 2 -->
-                        <div class="col-md-4">
-                            <label for="inputNaturalidade" class="form-label">Naturalidade</label>
-                            <input type="text" class="form-control" id="inputNaturalidade" placeholder="Teresopolitano" required>
-                        </div>
-                        <!-- Campo: Nacionalidade -->
-                        <div class="col-md-4">
-                            <label for="inputNacionalidade" class="form-label">Nacionalidade</label>
-                            <input type="text" class="form-control" id="inputNacionalidade" placeholder="Brasileira" required>
-                        </div>
-                        <!-- Campo: Sexo -->
-                        <div class="col-md-4">
-                            <label for="inputSexo" class="form-label">Sexo</label>
-                            <select id="inputSexo" class="form-select" required>
-                                <option selected disabled>Selecione</option>
-                                <option>Feminino</option>
-                                <option>Masculino</option>
-                                <option>Não Binário</option>
-                                <option>Outro</option>
-                                <option>Prefiro não informar</option>
-                            </select>
-                        </div>
-                        <!-- Campo: CPF -->
-                        <!-- linha 3 -->
-                        <div class="col-md-4">
-                            <label for="inputCPF" class="form-label">CPF</label>
-                            <input type="number" class="form-control" id="inputCPF" placeholder="000.000.000-00" required>
-                        </div>
-                        <!-- Campo: RG -->
-                        <div class="col-md-4">
-                            <label for="inputRG" class="form-label">RG</label>
-                            <input type="number" class="form-control" id="inputRG" placeholder="00.000.000-0" required>
-                        </div>
-                        <!-- Campo: Ano Letivo -->
-                        <div class="col-md-4">
-                            <label for="inputYear" class="form-label">Ano Letivo</label>
-                            <input type="number" class="form-control" id="inputYear" placeholder="2025" required>
-                        </div>
-                        <!-- Campos de Termo, Folha, Livro e Matrícula -->
-                        <!-- linha 4 -->
-                        <div class="col-12">
-                            <div class="row">
-                                <h6>Certidao de Nascimento</h6>
-                                <div class="col-md-4">
-                                <label for="inputTermo" class="form-label">Termo</label>
-                                <input type="text" class="form-control" id="inputTermo" placeholder="00000" required>
-                                </div>
-                                <div class="col-md-4">
-                                <label for="inputFolha" class="form-label">Folha</label>
-                                <input type="text" class="form-control" id="inputFolha" placeholder="000" required>
-                                </div>
-                                <div class="col-md-4">
-                                <label for="inputLivro" class="form-label">Livro</label>
-                                <input type="text" class="form-control" id="inputLivro" placeholder="000" required>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Linha separada para Matrícula -->
-                        <!-- linha 5 -->
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-md-12">
-                                <label for="inputMatricula" class="form-label">Matrícula</label>
-                                <input type="text" class="form-control" id="inputMatricula" placeholder="0000000" required>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Campo: Turno -->
-                        <!-- linha 6 -->
-                        <div class="col-md-4">
-                            <label for="inputShift" class="form-label">Turno</label>
-                            <select id="inputShift" class="form-select" required>
-                                <option selected disabled>Selecione</option>
-                                <option>Manhã</option>
-                                <option>Tarde</option>
-                                <option>Integral</option>
-                            </select>
-                        </div>
-                        <!-- Campo: Tipo Sanguíneo -->
-                        <div class="col-md-4">
-                            <label for="inputBlood" class="form-label">Tipo Sanguíneo</label>
-                            <select id="inputBlood" class="form-select">
-                                <option selected disabled>Selecione</option>
-                                <option>-O</option>
-                                <option>+O</option>
-                                <option>-A</option>
-                                <option>+A</option>
-                                <option>-B</option>
-                                <option>+B</option>
-                                <option>-AB</option>
-                                <option>+AB</option>
-                            </select>
-                        </div>
-                        <!-- Campo: Raça -->
-                        <div class="col-md-4">
-                            <label for="inputRace" class="form-label">Raça</label>
-                            <select id="inputRace" class="form-select">
-                                <option selected disabled>Selecione</option>
-                                <option>Parda</option>
-                                <option>Branca</option>
-                                <option>Pretos</option>
-                                <option>Indígenas</option>
-                                <option>Amarela</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
-                    <!-- fim dados aluno -->
-            </div>
-                
-
-
-            <div class="step" id="step2">
-                <!-- Seção: Anamnese Inicial -->
-                <div class="row g-3">
-                    <h3>Anamnese Inicial</h3>
-                    <!-- Transferência -->
-                    <div class="col-md-4">
-                        <label for="inputMatri">Matricula</label>
-                        <select name="inputMatri" class="form-select" id="matri" onchange="toggleCampoCondicional('matri', 'inputSchool')">
-                            <option selected disabled value="">Selecione</option>
-                            <option value="inicial">Inicial</option>
-                            <option value="municipal">Transferência Municipal/Estadual</option>
-                            <option value="particular">Transferência Particular</option>
-                        </select>
-                    </div>
-
-                    <div class="col-md-8" id="inputSchool" style="display: none;">
-                        <label for="inputSchool">Qual Escola</label>
-                        <input type="text" id="inputSchool" class="form-control" placeholder="Escola">
-                    </div>
-
-                    <!-- Irmãos -->
-                    <div class="col-md-4">
-                        <label for="inputBrothers">Tem Irmão(s) na Escola</label>
-                        <select name="inputBrothers" class="form-select" id="brothers" onchange="toggleCampoCondicional('brothers', 'campo-irmaos')">
-                            <option selected disabled value="">Selecione</option>
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                    </div>
-                    
-                    <!-- Agrupando os campos extras -->
-                    <div class="col-md-12" id="campo-irmaos" style="display: none;">
-                        <div class="row g-3">
-                            <div class="col-md-4">
-                                <label for="inputBrothersName">Qual(s) irmão(s)?</label>
-                                <input type="text" id="inputBrothersName" class="form-control" placeholder="Ex: João, Maria, Pedro">
-                            </div>
-                            <div class="col-md-4">
-                                <label for="inputBrothersClass">Turma</label>
-                                <input type="text" id="inputBrothersClass" class="form-control" placeholder="Ex: 1A, 2B, 3C">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- acompanhamento especial -->
-                    <div class="col-md-4">
-                        <label for="inputSpecial">Tem acompanhamento de especialista</label>
-                        <select name="inputSpecial" class="form-select" id="special" onchange="toggleCampoCondicional('special', 'campo-especialista', 'qualEspecialista')">
-                            <option selected disabled value="">Selecione</option>
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                    </div>
-                    <!-- Campo que será exibido se o usuário escolher "Sim" -->
-                    <div class="col-md-8" id="campo-especialista" style="display: none;">
-                        <label for="qualEspecialista">Qual especialista?</label>
-                        <input type="text" id="qualEspecialista" class="form-control" placeholder="Ex: Neurologista, Fonoaudiólogo">
-                    </div>
-                    <!-- alergias -->
-                    <div class="col-md-4">
-                        <label for="inputAlergias">Tem alergias (alimentação / remédios...)</label>
-                        <select name="inputAlergias" class="form-select" id="alergias" onchange="toggleCampoCondicional('alergias', 'campo-alergias', 'qualAlergias')">
-                            <option selected disabled value="">Selecione</option>
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                    </div>
-                    <!-- Campo que será exibido se o usuário escolher "Sim" -->
-                    <div class="col-md-8" id="campo-alergias" style="display: none;">
-                        <label for="qualAlergias">Qual alergia?</label>
-                        <input type="text" id="qualAlergias" class="form-control" placeholder="Ex: Alimentação, Remédios...">
-                    </div>
-                    <!-- medicamento -->
-                    <div class="col-md-4">
-                        <label for="inputMedicine">Tem algum medicamento em uso</label>
-                        <select name="inputMedicine" class="form-select" id="medicine" onchange="toggleCampoCondicional('medicine', 'campo-medicine', 'qualMedicine')">
-                            <option selected disabled value="">Selecione</option>
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
-                    </div>
-                    <!-- Campo que será exibido se o usuário escolher "Sim" -->
-                    <div class="col-md-8" id="campo-medicine" style="display: none;">
-                        <label for="qualMedicine">Qual medicamento?</label>
-                        <input type="text" id="qualMedicine" class="form-control" placeholder="Ex: Aspirina, Paracetamol...">
-                    </div>
-                    <!-- Campo: Reside Com -->
-                    <div class="col-md-4">
-                        <label for="inputReside">Reside Com</label>
-                        <input type="text" class="form-control" id="inputReside">
-                    </div>
-                </div>
-                <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
-                <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
-                <!-- fim anamnese -->
-            </div>
-            
-
-            <div class="step" id="step3">
-                <!-- Seção: Dados dos Familiares -->
-                <div class="row g-3">
-                    <h3 class="mt-4">Dados dos Familiares</h3>
-                    <h5>Dados da Mãe</h5>
-                    <!-- Nome da Mãe -->
-                    <div class="col-md-4">
-                        <label for="inputMotherName4" class="form-label">Nome da Mãe</label>
-                        <input type="text" class="form-control" id="inputMotherName4" placeholder="Maria da Silva">
-                    </div>
-                    <!-- Data de Nascimento da Mãe -->
-                    <div class="col-md-4">
-                        <label for="inputBirthDate" class="form-label">Data de Nascimento</label>
-                        <input type="date" class="form-control" id="inputBirthDate">
-                    </div>
-                    <!-- Endereço -->
-                    <div class="col-md-4">
-                        <label for="inputAddress" class="form-label">Endereço</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Rua Manoel Gomes, 000" required>
-                    </div>
-                    <!-- CEP -->
-                    <div class="col-md-4">
-                        <label for="inputCEP" class="form-label">CEP</label>
-                        <input type="number" class="form-control" id="inputCEP" placeholder="00000-000">
-                    </div>
-                    <!-- CPF -->
-                    <div class="col-md-4">
-                        <label for="inputCPF" class="form-label">CPF</label>
-                        <input type="number" class="form-control" id="inputCPF" placeholder="000.000.000-00" required>
-                    </div>
-                    <!-- RG -->
-                    <div class="col-md-4">
-                        <label for="inputRG" class="form-label">RG</label>
-                        <input type="number" class="form-control" id="inputRG" placeholder="00.000.000-0" required>
-                    </div>
-                    <!-- Telefone -->
-                    <div class="col-md-4">
-                        <label for="inputFone" class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" id="inputMotherFone" placeholder="(00) 00000-0000">
-                    </div>
-                    <!-- Email -->
-                    <div class="col-md-4">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="nome@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                    </div>
-                    <!-- Profissão -->
-                    <div class="col-md-4">
-                        <label for="inputProfession" class="form-label">Profissão</label>
-                        <input type="text" class="form-control" id="inputProfession">
-                    </div>
-                    <!-- Local de Trabalho -->
-                    <div class="col-4">
-                        <label for="inputWorkplace" class="form-label">Local de Trabalho</label>
-                        <input type="text" class="form-control" id="inputWorkplace">
-                    </div>
-                    <!-- Telefone do Trabalho -->
-                    <div class="col-md-4">
-                        <label for="inputFone" class="form-label">Telefone do Trabalho</label>
-                        <input type="tel" class="form-control" id="inputMotherWorkFone" placeholder="(00) 00000-0000">
-                    </div>
-                </div>     
-                <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
-                <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
-                <!-- fim dados da mãe -->
-            </div>
-
-                <div class="step" id="step4">
-                    <!-- Dados do Pai -->
-                    <div class="row g-3">
-                        <h3>Dados dos Familiares</h3>
-                        <h5>Dados do Pai</h5>
-                        <!-- Nome do Pai -->
-                        <div class="col-md-4">
-                            <label for="inputFatherName4" class="form-label">Nome do Pai</label>
-                            <input type="text" class="form-control" id="inputFatherName4" placeholder="Manoel da Silva">
-                        </div>
-                        <!-- Data de Nascimento do Pai -->
-                        <div class="col-md-4">
-                            <label for="inputBirthDate" class="form-label">Data de Nascimento</label>
-                            <input type="date" class="form-control" id="inputBirthDate">
-                        </div>
-                        <!-- Endereço -->
-                        <div class="col-md-4">
-                            <label for="inputAddress" class="form-label">Endereço</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Rua Manoel Gomes, 000" required>
-                        </div>
-                        <!-- CEP -->
-                        <div class="col-md-4">
-                            <label for="inputCEP" class="form-label">CEP</label>
-                            <input type="number" class="form-control" id="inputCEP" placeholder="00000-000">
-                        </div>
-                        <!-- CPF -->
-                        <div class="col-md-4">
-                            <label for="inputCPF" class="form-label">CPF</label>
-                            <input type="number" class="form-control" id="inputCPF" placeholder="000.000.000-00" required>
-                        </div>
-                        <!-- RG -->
-                        <div class="col-md-4">
-                            <label for="inputRG" class="form-label">RG</label>
-                            <input type="number" class="form-control" id="inputRG" placeholder="00.000.000-0" required>
-                        </div>
-                        <!-- Telefone -->
-                        <div class="col-md-4">
-                            <label for="inputFone" class="form-label">Telefone</label>
-                            <input type="tel" class="form-control" id="inputFatherFone" placeholder="(00) 00000-0000">
-                        </div>
-                        <!-- Email -->
-                        <div class="col-md-4">
-                            <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="nome@example.com">
-                        </div>
-                        <!-- Profissão -->
-                        <div class="col-md-4">
-                            <label for="inputProfession" class="form-label">Profissão</label>
-                            <input type="text" class="form-control" id="inputProfession">
-                        </div>
-                        <!-- Local de Trabalho -->
-                        <div class="col-4">
-                            <label for="inputWorkplace" class="form-label">Local de Trabalho</label>
-                            <input type="text" class="form-control" id="inputWorkplace">
-                        </div>
-                        <!-- Telefone do Trabalho -->
-                        <div class="col-md-4">
-                            <label for="inputFone" class="form-label">Telefone do Trabalho</label>
-                            <input type="tel" class="form-control" id="inputFatherWorkFone" placeholder="(00) 00000-0000">
-                        </div>
-                    </div>
-                    <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
-                    <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
-                    <!-- fim dados do pai -->
-                </div>
-                
-
-
-            <div class="step" id="step5">
-                <!-- Seção: Responsável Financeiro -->
-                <div class="row g-3">
-                    <h3 class="mt-4">Responsável Financeiro</h3>
-                    <!-- Nome -->
-                    <div class="col-md-6">
-                        <label for="inputName" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="João da Silva" required>
-                    </div>
-                    <!-- Telefone -->
-                    <div class="col-md-6">
-                        <label for="inputFone" class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" id="inputFone" placeholder="(00) 00000-0000">
-                    </div>
-                </div>
-                <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
-                <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
-                <!-- fim dados do responsável financeiro -->
-            </div>
-
-            <div class="step" id="step6">
-                <!-- Seção: Observações e Documentos -->
-                <div class="row g-3">
-                    <h3 class="mt-4">Observações</h3>
-                    <!-- Campo para observações sobre pessoas autorizadas a buscar o aluno -->
-                    <div class="col-md-12">
-                        <label for="inputObservations" class="form-label">Pessoas Autorizadas a Buscar na Escola</label>
-                        <textarea class="form-control" id="inputObservations" rows="1" placeholder="Nomes"></textarea>
-                    </div>
-                    <!-- Lista de documentos com checkbox -->
-                    <div id= "documentos" class="row">
-                        <div class="col-4 col-4 mb-2 form-check">
-                            <input class="form-check-input" type="checkbox" id="inputCert">
-                            <label class="form-check-label" for="inputCert">Certidão de Nascimento</label>
-                        </div>
-                        <div class="col-4 col-4 mb-2 form-check">
-                            <input class="form-check-input" type="checkbox" id="inputCartVac">
-                            <label class="form-check-label" for="inputCartVac">Carteira de Vacinação</label>
-                        </div>
-                        <div class="col-4 col-4 mb-2 form-check">
-                            <input class="form-check-input" type="checkbox" id="inputDecEsc">
-                            <label class="form-check-label" for="inputDecEsc">Declaração Escolar</label>
-                        </div>
-                        <div class="col-4 mb-2 form-check">
-                            <input class="form-check-input" type="checkbox" id="inputComRes">
-                            <label class="form-check-label" for="inputComRes">Comprovante de Residência</label>
-                        </div>
-                        <div class="col-4 mb-2 form-check">
-                            <input class="form-check-input" type="checkbox" id="inputFotos">
-                            <label class="form-check-label" for="inputFotos">Fotos</label>
-                        </div>
-                        <div class="col-4 mb-2 form-check">
-                            <input class="form-check-input" type="checkbox" id="inputRGCPF">
-                            <label class="form-check-label" for="inputRGCPF">RG/CPF Mãe</label>
-                        </div>
-                        <div class="col-4 mb-2 form-check">
-                            <input class="form-check-input" type="checkbox" id="inputRGCPF">
-                            <label class="form-check-label" for="inputRGCPF">RG/CPF Pai</label>
-                        </div>
-                        <div class="col-4 mb-2 form-check">
-                            <input class="form-check-input" type="checkbox" id="inputHist">
-                            <label class="form-check-label" for="inputHist">Histórico Escolar</label>
-                        </div>
-                    </div>
-                    <!-- Campo: Valor do Contrato -->
-                    <div class="col-md-6">
-                        <label for="inputValor">Valor do Contrato</label>
-                        <input type="number" class="form-control" id="inputValor">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputVencimento">Vencimento</label>
-                        <input type="date" class="form-control" id="inputVencimento">
-                    </div>
-                    <!-- Botões de ação -->
-                    <div class="col-12">
-                        <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
-                        <button type="submit" class="btn btn-primary">Cadastrar</button>
-                        <button type="button" class="btn btn-success" id="exportCsv">Exportar CSV</button>
-                        <button type="button" class="btn btn-danger" id="exportPdf">Exportar PDF</button>
-                    </div>
-                </div>
-                <!-- fim observações e documentos -->
-            </div>
-            <!-- fim formulário -->
-        </form>
-    </main>
-
-    <!-- Rodapé do site -->
-    <footer class="text-center py-3">
-        <span class="fw-bold text-white">Todos os direitos reservados.</span>
-        <div class="mt-2">
-            <img src="img/logo.png" alt="Logo" width="100" height="100" class="footer-img">
+    <!-- STEP 1 - Dados do Aluno -->
+    <div class="step active" id="step1">
+        <div class="row g-3">
+        <h3 class="mt-4">Dados do Aluno</h3>
+        <!-- Linha 1 -->
+        <div class="col-md-4">
+            <label for="inputName4" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="inputName4" name="nome" placeholder="João da Silva" required>
         </div>
-        <span class="fw-bold text-white">Turma 3001 ADS - UNESA 2025.1</span>
-    </footer>
+        <div class="col-md-4">
+            <label for="inputAge" class="form-label">Idade</label>
+            <input type="number" class="form-control" id="inputAge" name="idade" placeholder="00" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputBirthDate" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" id="inputBirthDate" name="data_nascimento" placeholder="00/00/0000" required>
+        </div>
+        <!-- Linha 2 -->
+        <div class="col-md-4">
+            <label for="inputNaturalidade" class="form-label">Naturalidade</label>
+            <input type="text" class="form-control" id="inputNaturalidade" name="naturalidade" placeholder="Teresopolitano" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputNacionalidade" class="form-label">Nacionalidade</label>
+            <input type="text" class="form-control" id="inputNacionalidade" name="nacionalidade" placeholder="Brasileira" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputSexo" class="form-label">Sexo</label>
+            <select id="inputSexo" class="form-select" name="sexo" required>
+            <option selected disabled>Selecione</option>
+            <option>Feminino</option>
+            <option>Masculino</option>
+            <option>Não Binário</option>
+            <option>Outro</option>
+            <option>Prefiro não informar</option>
+            </select>
+        </div>
+        <!-- Linha 3 -->
+        <div class="col-md-4">
+            <label for="inputCPFAluno" class="form-label">CPF</label>
+            <input type="number" class="form-control" id="inputCPFAluno" name="cpf_aluno" placeholder="000.000.000-00" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputRGAluno" class="form-label">RG</label>
+            <input type="number" class="form-control" id="inputRGAluno" name="rg_aluno" placeholder="00.000.000-0" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputYear" class="form-label">Ano Letivo</label>
+            <input type="number" class="form-control" id="inputYear" name="ano_letivo" placeholder="2025" required>
+        </div>
+        <!-- Linha 4 - Certidão de Nascimento -->
+        <div class="col-12">
+            <div class="row">
+            <h6>Certidão de Nascimento</h6>
+            <div class="col-md-4">
+                <label for="inputTermo" class="form-label">Termo</label>
+                <input type="text" class="form-control" id="inputTermo" name="termo" placeholder="00000" required>
+            </div>
+            <div class="col-md-4">
+                <label for="inputFolha" class="form-label">Folha</label>
+                <input type="text" class="form-control" id="inputFolha" name="folha" placeholder="000" required>
+            </div>
+            <div class="col-md-4">
+                <label for="inputLivro" class="form-label">Livro</label>
+                <input type="text" class="form-control" id="inputLivro" name="livro" placeholder="000" required>
+            </div>
+            </div>
+        </div>
+        <!-- Linha 5 - Matrícula -->
+        <div class="col-12">
+            <div class="row">
+            <div class="col-md-12">
+                <label for="inputMatricula" class="form-label">Matrícula</label>
+                <input type="text" class="form-control" id="inputMatricula" name="matricula" placeholder="0000000" required>
+            </div>
+            </div>
+        </div>
+        <!-- Linha 6 -->
+        <div class="col-md-4">
+            <label for="inputShift" class="form-label">Turno</label>
+            <select id="inputShift" class="form-select" name="turno" required>
+            <option selected disabled>Selecione</option>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Integral</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="inputBlood" class="form-label">Tipo Sanguíneo</label>
+            <select id="inputBlood" class="form-select" name="tipo_sanguineo">
+            <option selected disabled>Selecione</option>
+            <option>-O</option>
+            <option>+O</option>
+            <option>-A</option>
+            <option>+A</option>
+            <option>-B</option>
+            <option>+B</option>
+            <option>-AB</option>
+            <option>+AB</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="inputRace" class="form-label">Raça</label>
+            <select id="inputRace" class="form-select" name="raca">
+            <option selected disabled>Selecione</option>
+            <option>Parda</option>
+            <option>Branca</option>
+            <option>Pretos</option>
+            <option>Indígenas</option>
+            <option>Amarela</option>
+            </select>
+        </div>
+        </div>
+        <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
+    </div>
+    <!-- Fim do Step 1 -->
+
+    <!-- STEP 2 - Anamnese Inicial -->
+    <div class="step" id="step2">
+        <div class="row g-3">
+        <h3>Anamnese Inicial</h3>
+        <!-- Transferência -->
+        <div class="col-md-4">
+            <label for="selectMatri" class="form-label">Matrícula</label>
+            <select name="inputMatri" class="form-select" id="selectMatri" onchange="toggleCampoCondicional('selectMatri', 'divSchool')">
+            <option selected disabled value="">Selecione</option>
+            <option value="inicial">Inicial</option>
+            <option value="municipal">Transferência Municipal/Estadual</option>
+            <option value="particular">Transferência Particular</option>
+            </select>
+        </div>
+        <div class="col-md-8" id="divSchool" style="display: none;">
+            <label for="inputSchool" class="form-label">Qual Escola</label>
+            <input type="text" id="inputSchool" class="form-control" name="escola" placeholder="Escola">
+        </div>
+        <!-- Irmãos -->
+        <div class="col-md-4">
+            <label for="selectBrothers" class="form-label">Tem Irmão(s) na Escola</label>
+            <select name="inputBrothers" class="form-select" id="selectBrothers" onchange="toggleCampoCondicional('selectBrothers', 'divIrmaos')">
+            <option selected disabled value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+            </select>
+        </div>
+        <div class="col-md-12" id="divIrmaos" style="display: none;">
+            <div class="row g-3">
+            <div class="col-md-4">
+                <label for="inputBrothersName" class="form-label">Qual(s) irmão(s)?</label>
+                <input type="text" id="inputBrothersName" class="form-control" name="irmaos_nome" placeholder="Ex: João, Maria, Pedro">
+            </div>
+            <div class="col-md-4">
+                <label for="inputBrothersClass" class="form-label">Turma</label>
+                <input type="text" id="inputBrothersClass" class="form-control" name="irmaos_turma" placeholder="Ex: 1A, 2B, 3C">
+            </div>
+            </div>
+        </div>
+        <!-- Acompanhamento especial -->
+        <div class="col-md-4">
+            <label for="selectSpecial" class="form-label">Tem acompanhamento de especialista</label>
+            <select name="inputSpecial" class="form-select" id="selectSpecial" onchange="toggleCampoCondicional('selectSpecial', 'divEspecialista', 'inputQualEspecialista')">
+            <option selected disabled value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+            </select>
+        </div>
+        <div class="col-md-8" id="divEspecialista" style="display: none;">
+            <label for="inputQualEspecialista" class="form-label">Qual especialista?</label>
+            <input type="text" id="inputQualEspecialista" class="form-control" name="especialista" placeholder="Ex: Neurologista, Fonoaudiólogo">
+        </div>
+        <!-- Alergias -->
+        <div class="col-md-4">
+            <label for="selectAlergias" class="form-label">Tem alergias (alimentação / remédios...)</label>
+            <select name="inputAlergias" class="form-select" id="selectAlergias" onchange="toggleCampoCondicional('selectAlergias', 'divAlergias', 'inputQualAlergia')">
+            <option selected disabled value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+            </select>
+        </div>
+        <div class="col-md-8" id="divAlergias" style="display: none;">
+            <label for="inputQualAlergia" class="form-label">Qual alergia?</label>
+            <input type="text" id="inputQualAlergia" class="form-control" name="alergia" placeholder="Ex: Alimentação, Remédios...">
+        </div>
+        <!-- Medicamento -->
+        <div class="col-md-4">
+            <label for="selectMedicine" class="form-label">Tem algum medicamento em uso</label>
+            <select name="inputMedicine" class="form-select" id="selectMedicine" onchange="toggleCampoCondicional('selectMedicine', 'divMedicine', 'inputQualMedicine')">
+            <option selected disabled value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+            </select>
+        </div>
+        <div class="col-md-8" id="divMedicine" style="display: none;">
+            <label for="inputQualMedicine" class="form-label">Qual medicamento?</label>
+            <input type="text" id="inputQualMedicine" class="form-control" name="medicamento" placeholder="Ex: Aspirina, Paracetamol...">
+        </div>
+        <!-- Reside Com -->
+        <div class="col-md-4">
+            <label for="inputReside" class="form-label">Reside Com</label>
+            <input type="text" class="form-control" id="inputReside" name="reside">
+        </div>
+        </div>
+        <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
+        <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
+    </div>
+    <!-- Fim do Step 2 -->
+
+    <!-- STEP 3 - Dados dos Familiares (Mãe) -->
+    <div class="step" id="step3">
+        <div class="row g-3">
+        <h3 class="mt-4">Dados dos Familiares</h3>
+        <h5>Dados da Mãe</h5>
+        <div class="col-md-4">
+            <label for="inputMotherName" class="form-label">Nome da Mãe</label>
+            <input type="text" class="form-control" id="inputMotherName" name="nome_mae" placeholder="Maria da Silva">
+        </div>
+        <div class="col-md-4">
+            <label for="inputMotherBirthDate" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" id="inputMotherBirthDate" name="nascimento_mae">
+        </div>
+        <div class="col-md-4">
+            <label for="inputMotherAddress" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="inputMotherAddress" name="endereco_mae" placeholder="Rua Manoel Gomes, 000" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputMotherCEP" class="form-label">CEP</label>
+            <input type="number" class="form-control" id="inputMotherCEP" name="cep_mae" placeholder="00000-000" maxlength="9">
+        </div>
+        <div class="col-md-4">
+            <label for="inputMotherCPF" class="form-label">CPF</label>
+            <input type="number" class="form-control" id="inputMotherCPF" name="cpf_mae" placeholder="000.000.000-00" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputMotherRG" class="form-label">RG</label>
+            <input type="number" class="form-control" id="inputMotherRG" name="rg_mae" placeholder="00.000.000-0" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputMotherFone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="inputMotherFone" name="fone_mae" placeholder="(00) 00000-0000">
+        </div>
+        <div class="col-md-4">
+            <label for="inputMotherEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputMotherEmail" name="email_mae" placeholder="nome@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Digite um email válido (exemplo: usuario@provedor.com)" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputMotherProfession" class="form-label">Profissão</label>
+            <input type="text" class="form-control" id="inputMotherProfession" name="profissao_mae">
+        </div>
+        <div class="col-md-4">
+            <label for="inputMotherWorkplace" class="form-label">Local de Trabalho</label>
+            <input type="text" class="form-control" id="inputMotherWorkplace" name="trabalho_mae">
+        </div>
+        <div class="col-md-4">
+            <label for="inputMotherWorkFone" class="form-label">Telefone do Trabalho</label>
+            <input type="tel" class="form-control" id="inputMotherWorkFone" name="fone_trabalho_mae" placeholder="(00) 00000-0000">
+        </div>
+        </div>
+        <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
+        <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
+    </div>
+    <!-- Fim do Step 3 -->
+
+    <!-- STEP 4 - Dados dos Familiares (Pai) -->
+    <div class="step" id="step4">
+        <div class="row g-3">
+        <h3>Dados dos Familiares</h3>
+        <h5>Dados do Pai</h5>
+        <div class="col-md-4">
+            <label for="inputFatherName" class="form-label">Nome do Pai</label>
+            <input type="text" class="form-control" id="inputFatherName" name="nome_pai" placeholder="Manoel da Silva">
+        </div>
+        <div class="col-md-4">
+            <label for="inputFatherBirthDate" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" id="inputFatherBirthDate" name="nascimento_pai">
+        </div>
+        <div class="col-md-4">
+            <label for="inputFatherAddress" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="inputFatherAddress" name="endereco_pai" placeholder="Rua Manoel Gomes, 000" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputFatherCEP" class="form-label">CEP</label>
+            <input type="number" class="form-control" id="inputFatherCEP" name="cep_pai" placeholder="00000-000" maxlength="9">
+        </div>
+        <div class="col-md-4">
+            <label for="inputFatherCPF" class="form-label">CPF</label>
+            <input type="number" class="form-control" id="inputFatherCPF" name="cpf_pai" placeholder="000.000.000-00" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputFatherRG" class="form-label">RG</label>
+            <input type="number" class="form-control" id="inputFatherRG" name="rg_pai" placeholder="00.000.000-0" required>
+        </div>
+        <div class="col-md-4">
+            <label for="inputFatherFone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="inputFatherFone" name="fone_pai" placeholder="(00) 00000-0000">
+        </div>
+        <div class="col-md-4">
+            <label for="inputFatherEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputFatherEmail" name="email_pai" placeholder="nome@example.com">
+        </div>
+        <div class="col-md-4">
+            <label for="inputFatherProfession" class="form-label">Profissão</label>
+            <input type="text" class="form-control" id="inputFatherProfession" name="profissao_pai">
+        </div>
+        <div class="col-md-4">
+            <label for="inputFatherWorkplace" class="form-label">Local de Trabalho</label>
+            <input type="text" class="form-control" id="inputFatherWorkplace" name="trabalho_pai">
+        </div>
+        <div class="col-md-4">
+            <label for="inputFatherWorkFone" class="form-label">Telefone do Trabalho</label>
+            <input type="tel" class="form-control" id="inputFatherWorkFone" name="fone_trabalho_pai" placeholder="(00) 00000-0000">
+        </div>
+        </div>
+        <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
+        <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
+    </div>
+    <!-- Fim do Step 4 -->
+
+    <!-- STEP 5 - Responsável Financeiro -->
+    <div class="step" id="step5">
+        <div class="row g-3">
+        <h3 class="mt-4">Responsável Financeiro</h3>
+        <div class="col-md-6">
+            <label for="inputRespName" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="inputRespName" name="resp_nome" placeholder="João da Silva" required>
+        </div>
+        <div class="col-md-6">
+            <label for="inputRespFone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="inputRespFone" name="resp_fone" placeholder="(00) 00000-0000">
+        </div>
+        </div>
+        <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
+        <button type="button" class="btn-nav" onclick="nextStep()">Próximo</button>
+    </div>
+    <!-- Fim do Step 5 -->
+
+    <!-- STEP 6 - Observações e Documentos -->
+    <div class="step" id="step6">
+        <div class="row g-3">
+        <h3 class="mt-4">Observações</h3>
+        <div class="col-md-12">
+            <label for="inputObservations" class="form-label">Pessoas Autorizadas a Buscar na Escola</label>
+            <textarea class="form-control" id="inputObservations" name="observacoes" rows="1" placeholder="Nomes"></textarea>
+        </div>
+        <!-- Lista de documentos com checkbox -->
+        <div id="documentos" class="row">
+            <div class="col-4 mb-2 form-check">
+            <input class="form-check-input" type="checkbox" id="inputCert" name="documentos[]" value="Certidão de Nascimento">
+            <label class="form-check-label" for="inputCert">Certidão de Nascimento</label>
+            </div>
+            <div class="col-4 mb-2 form-check">
+            <input class="form-check-input" type="checkbox" id="inputCartVac" name="documentos[]" value="Carteira de Vacinação">
+            <label class="form-check-label" for="inputCartVac">Carteira de Vacinação</label>
+            </div>
+            <div class="col-4 mb-2 form-check">
+            <input class="form-check-input" type="checkbox" id="inputDecEsc" name="documentos[]" value="Declaração Escolar">
+            <label class="form-check-label" for="inputDecEsc">Declaração Escolar</label>
+            </div>
+            <div class="col-4 mb-2 form-check">
+            <input class="form-check-input" type="checkbox" id="inputComRes" name="documentos[]" value="Comprovante de Residência">
+            <label class="form-check-label" for="inputComRes">Comprovante de Residência</label>
+            </div>
+            <div class="col-4 mb-2 form-check">
+            <input class="form-check-input" type="checkbox" id="inputFotos" name="documentos[]" value="Fotos">
+            <label class="form-check-label" for="inputFotos">Fotos</label>
+            </div>
+            <div class="col-4 mb-2 form-check">
+            <input class="form-check-input" type="checkbox" id="inputMotherRGCPF" name="documentos[]" value="RG/CPF Mãe">
+            <label class="form-check-label" for="inputMotherRGCPF">RG/CPF Mãe</label>
+            </div>
+            <div class="col-4 mb-2 form-check">
+            <input class="form-check-input" type="checkbox" id="inputFatherRGCPF" name="documentos[]" value="RG/CPF Pai">
+            <label class="form-check-label" for="inputFatherRGCPF">RG/CPF Pai</label>
+            </div>
+            <div class="col-4 mb-2 form-check">
+            <input class="form-check-input" type="checkbox" id="inputHist" name="documentos[]" value="Histórico Escolar">
+            <label class="form-check-label" for="inputHist">Histórico Escolar</label>
+            </div>
+        </div>
+        <!-- Valor e Vencimento -->
+        <div class="col-md-6">
+            <label for="inputValor" class="form-label">Valor do Contrato</label>
+            <input type="number" class="form-control" id="inputValor" name="valor_contrato">
+        </div>
+        <div class="col-md-6">
+            <label for="inputVencimento" class="form-label">Vencimento</label>
+            <input type="date" class="form-control" id="inputVencimento" name="vencimento">
+        </div>
+        <!-- Botões de ação -->
+        <div class="col-12">
+            <button type="button" class="btn-nav" onclick="prevStep()">Anterior</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="button" class="btn btn-success" id="exportCsv">Exportar CSV</button>
+            <button type="button" class="btn btn-danger" id="exportPdf">Exportar PDF</button>
+        </div>
+        </div>
+    </div>
+    <!-- Fim do Step 6 -->
+
+    </form>
+</main>
+
+<!-- Rodapé do site -->
+<footer class="text-center py-3">
+    <span class="fw-bold text-white">Todos os direitos reservados.</span>
+    <div class="mt-2">
+    <img src="img/logo.png" alt="Logo" width="100" height="100" class="footer-img">
+    </div>
+    <span class="fw-bold text-white">Turma 3001 ADS - UNESA 2025.1</span>
+</footer>
 
     <!-- Scripts externos e customizados -->
     <script src="js/form.js" defer></script>
